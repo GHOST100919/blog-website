@@ -1,0 +1,178 @@
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 100%;
+    height: 100%;
+    background: wheat;
+
+}
+header{
+    display: flex;
+    flex-direction: column;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.items{
+    display: flex;
+    position: relative;
+    top: -60px;
+    gap: 70px;
+    list-style: none;
+}
+li:hover{
+    text-decoration: underline;
+    background: red;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+h1{
+    text-align: center;
+}
+.pulse{
+    animation: pulse 3s infinite ease-in;
+}
+@keyframes pulse{
+    0%{scale: (1); color: black;}
+    50%{scale: (1.1); color: red;}
+    100%{scale: (1); color: black;}
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    cursor: pointer;
+}
+.card{
+    margin-right: 16px;
+    background: url(backgr.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 0 2px black;
+    transition: transform 0.9s ease-in-out;
+}
+.card:hover{
+    transform: scale(1.05);
+}
+/* .card::before{
+    content:'';
+    position: absolute;
+    width: 500px;
+    background: linear-gradient(90deg, black, red);
+    height: 100px;
+    animation: animate 5s linear infinite;
+}
+@keyframes animate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.card::after{
+    content: '';
+    position: absolute;
+    inset: 6px;
+    border-radius: 8px;
+} */
+.img{
+    transition: transform 1s ease-in-out;
+    border-radius: 50px;
+}
+.img:hover{
+    transform: scale(1.05);
+}
+button{
+    border: none;
+    border-radius: 15px;
+    width: 70%;
+    padding: 2px;
+    background: rgb(247, 209, 140);
+}
+.grid{
+margin-top: 20px;
+background: url(makeup.jpg);
+background-repeat: no-repeat;
+background-size: 100vw;
+line-height: 40px;
+width: 100vw;
+text-align: center;
+}
+.foot{
+list-style: none;
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+padding: 10px;
+}
+.line{
+    width: 80vw;
+}
+
+@media (max-width: 640px) {
+  header img {
+    width: 100%;
+    height: auto;
+  }
+
+  .items {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: center;
+    padding: 0;
+  }
+
+  .items li {
+    margin: 10px 0;
+    font-size: 16px;
+  }
+
+  .pulse h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .img img {
+    width: 100%;
+    height: auto;
+  }
+
+  button {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  footer {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+  }
+
+  footer li {
+    list-style: none;
+    margin: 5px 0;
+    font-size: 14px;
+  }
+
+  .container {
+    padding: 10px;
+  }
+}
