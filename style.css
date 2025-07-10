@@ -1,10 +1,15 @@
+html, body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
     width: 100%;
     height: 100%;
     background: wheat;
-
 }
+
 header{
     display: flex;
     flex-direction: column;
@@ -31,13 +36,13 @@ li:hover{
 h1{
     text-align: center;
 }
-.pulse{
-    animation: pulse 1s infinite ease-in;
+.animate{
+    animation: pulse 2s infinite ease-out;
 }
 @keyframes pulse{
     0%{scale: (1); color: black;}
     50%{scale: (1.1); color: red;}
-    100%{scale: (1); color: black;}
+    100%{translate: (1); color: black;}
 }
 
 .cards{
@@ -55,6 +60,7 @@ h1{
     text-align: center;
     box-shadow: 0 0 2px black;
     transition: transform 0.9s ease-in-out;
+    position: relative;
 }
 .card:hover{
     transform: scale(1.05);
@@ -96,15 +102,22 @@ button{
     background: rgb(247, 209, 140);
 }
 .grid{
-margin-top: 20px;
+margin-top: 40px;
 line-height: 20px;
 width: 100vw;
+background: url(backgr.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+text-align: center;
 }
 .foot{
+display: grid;
 list-style: none;
-grid-template-columns: repeat(2, 1fr);
+grid-template-columns: repeat(3, 1fr);
 padding: 10px;
+place-items: center;
 }
+
 .line{
     width: 80vw;
 }
@@ -123,7 +136,8 @@ padding: 10px;
     align-items: center;
     margin-right: 350px;
     margin-top: 50px;
-    width: 100px
+    width: 110px;
+    font-family: cursive;
   }
 
 
@@ -168,9 +182,14 @@ padding: 10px;
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
+    width: 100vw;
   }
   .foot{
     display: grid;
     place-items: center;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .text{
+    color: gray;
   }
 }
