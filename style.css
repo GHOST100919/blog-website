@@ -97,17 +97,12 @@ button{
 }
 .grid{
 margin-top: 20px;
-background: url(makeup.jpg);
-background-repeat: no-repeat;
-background-size: 100vw;
-line-height: 40px;
+line-height: 20px;
 width: 100vw;
-text-align: center;
 }
 .foot{
 list-style: none;
-display: grid;
-grid-template-columns: repeat(3, 1fr);
+grid-template-columns: repeat(2, 1fr);
 padding: 10px;
 }
 .line{
@@ -124,22 +119,17 @@ padding: 10px;
   .items {
     display: flex;
     flex-direction: column;
-    row-gap: 10px;
-    /* align-items: start; */
-    text-align: left;
-    align-items: start;
-    padding: 0;
+    row-gap: 4px;
+    align-items: center;
+    margin-right: 350px;
+    margin-top: 50px;
+    width: 100px
   }
 
-  .items li {
-    text-align: left;
-    margin: 10px 0;
-    font-size: 16px;
-  }
 
   .pulse h1 {
-    font-size: 20px;
-    text-align: center;
+    font-size: 2rem;
+    text-align: start;
   }
 
   .cards {
@@ -163,19 +153,7 @@ padding: 10px;
     padding: 10px;
     font-size: 14px;
   }
-
-  footer {
-    width: 100%;
-    text-align: center;
-    padding: 20px;
-  }
-
-  footer li {
-    list-style: none;
-    margin: 5px 0;
-    font-size: 14px;
-  }
-
+  
   .container {
     padding: 10px;
   }
@@ -184,5 +162,15 @@ padding: 10px;
   }
   nav{
     margin-top: 20px;
+  }
+  .grid{
+    background: url(backgr.jpg), white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+  }
+  .foot{
+    display: grid;
+    place-items: center;
   }
 }
