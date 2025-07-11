@@ -9,6 +9,7 @@ body{
     height: 100%;
     background: wheat;
     padding: 10px;
+    text-align: center;
 }
 
 header{
@@ -131,18 +132,9 @@ line-height: 40px;
   .items {
     display: flex;
     flex-direction: column;
+    margin-right: 4rem;
     row-gap: 10px;
-    align-items: center;
-    margin-right: 15rem;
     margin-top: 50px;
-    width: 110px;
-    font-family: cursive;
-  }
-
-
-  .pulse h1 {
-    font-size: 2rem;
-    text-align: start;
   }
 
   .cards {
@@ -178,10 +170,16 @@ line-height: 40px;
   }
   .grid{
    background: white;
-   display: grid;
+   width: 100vw;
+   text-align: left;
+       text-align: center;
+
+   
   }
   .foot{
     display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    font: 3px;
   }
   .text{
     color: gray;
